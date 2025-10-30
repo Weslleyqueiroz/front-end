@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Responsiva com Tailwind</title>
+  <link href="./src/input.css" rel="stylesheet"/>
+  <link href="./css/styles.css" rel="stylesheet"/>
+  <link href="./css/output.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="text-xl font-bold bg-black">Meu Site</h1>
+
+    <!-- Menu Desktop -->
+    <nav class="bg-slate-500">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <!-- Botão Mobile -->
+    <button id="menu-btn">
+      ☰
+    </button>
+
+    <!-- Menu Mobile -->
+    <nav id="mobile-menu">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section>
+      <h2>Bem-vindo!</h2>
+      <p>
+        Esta é uma página de exemplo responsiva criada com Tailwind CSS.
+        Experimente redimensionar a tela para ver as mudanças no layout e o menu móvel em ação.
+      </p>
+    </section>
+
+    <section>
+      <h2>Design Responsivo</h2>
+      <p>
+        O Tailwind facilita o uso de media queries com prefixos de breakpoint,
+        sem precisar escrever CSS manualmente. Além disso, podemos integrar facilmente comportamentos
+        dinâmicos como este menu mobile com JavaScript.
+      </p>
+    </section>
+  </main>
+
+  <!-- Rodapé fixado ao final -->
+  <footer>
+    © 2025 - Site Responsivo com Tailwind
+  </footer>
+</body>
+<script src="/src/js/script.js"></script>
+</html>
